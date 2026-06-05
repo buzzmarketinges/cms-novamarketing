@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_blocks_quotes",
+  "info": { "displayName": "Cita destacada", "icon": "quote", "description": "Pullquote tipográfico con autor" },
+  "options": {},
+  "attributes": {
+    "quote": { "type": "text", "required": true },
+    "author": { "type": "string" },
+    "role": { "type": "string" }
+  }
+}

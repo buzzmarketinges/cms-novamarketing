@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_blocks_image_texts",
+  "info": { "displayName": "Imagen + Texto", "icon": "landscape", "description": "Imagen y texto en columnas, con posición configurable" },
+  "options": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "title": { "type": "string" },
+    "content": { "type": "richtext" },
+    "image_side": { "type": "enumeration", "enum": ["left", "right"], "default": "right" }
+  }
+}

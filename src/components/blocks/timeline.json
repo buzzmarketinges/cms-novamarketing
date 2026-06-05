@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_timelines",
+  "info": { "displayName": "Proceso paso a paso", "icon": "list", "description": "Línea de tiempo o proceso numerado" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "steps": {
+      "type": "component",
+      "component": "shared.step-item",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_blocks_htmls",
+  "info": { "displayName": "HTML personalizado", "icon": "code", "description": "Bloque de HTML o Markdown libre" },
+  "options": {},
+  "attributes": {
+    "content": { "type": "richtext", "required": true }
+  }
+}

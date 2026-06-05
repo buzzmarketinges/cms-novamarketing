@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_blocks_videos",
+  "info": { "displayName": "Video embebido", "icon": "play", "description": "Embed de YouTube o Vimeo" },
+  "options": {},
+  "attributes": {
+    "url": { "type": "string", "required": true },
+    "caption": { "type": "string" }
+  }
+}

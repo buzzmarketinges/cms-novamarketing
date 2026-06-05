@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_blocks_two_columns",
+  "info": { "displayName": "Dos columnas de texto", "icon": "layout", "description": "Dos bloques de texto en paralelo" },
+  "options": {},
+  "attributes": {
+    "left": { "type": "richtext" },
+    "right": { "type": "richtext" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_blocks_big_stats",
+  "info": { "displayName": "KPI / Estadística grande", "icon": "bold", "description": "Una estadística enorme con etiqueta y descripción" },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string", "required": true },
+    "label": { "type": "string", "required": true },
+    "description": { "type": "text" },
+    "color": { "type": "enumeration", "enum": ["black", "blue", "green"], "default": "black" }
+  }
+}

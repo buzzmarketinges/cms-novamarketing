@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_blocks_images",
+  "info": { "displayName": "Imagen", "icon": "picture", "description": "Imagen con tamaño y caption opcionales" },
+  "options": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "caption": { "type": "string" },
+    "size": { "type": "enumeration", "enum": ["normal", "wide", "full"], "default": "normal" }
+  }
+}

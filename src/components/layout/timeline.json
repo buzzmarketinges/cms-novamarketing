@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_timelines",
+  "info": {
+    "displayName": "Timeline",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.step-item"
+    }
+  }
+}

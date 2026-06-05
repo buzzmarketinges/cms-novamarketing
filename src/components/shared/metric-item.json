@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_metric_items",
+  "info": {
+    "displayName": "Metric Item",
+    "icon": "chart"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

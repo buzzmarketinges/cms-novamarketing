@@ -1,0 +1,47 @@
+{
+    "kind": "collectionType",
+    "collectionName": "categories",
+    "info": {
+        "singularName": "category",
+        "pluralName": "categories",
+        "displayName": "Categoría de Caso",
+        "description": "Categorías para los casos de éxito"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "unique": true,
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        },
+        "case_studies": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::case-study.case-study",
+            "mappedBy": "categories"
+        },
+        "articles": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::article.article",
+            "mappedBy": "categories"
+        }
+    }
+}

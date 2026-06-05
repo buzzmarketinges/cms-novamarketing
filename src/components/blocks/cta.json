@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_ctas",
+  "info": { "displayName": "Llamada a la acción", "icon": "cursor", "description": "Sección CTA con headline, descripción y botón" },
+  "options": {},
+  "attributes": {
+    "headline": { "type": "string" },
+    "description": { "type": "text" },
+    "button_text": { "type": "string", "default": "Contactar" },
+    "button_url": { "type": "string" },
+    "open_modal": { "type": "boolean", "default": true },
+    "style": { "type": "enumeration", "enum": ["dark", "light", "accent"], "default": "dark" }
+  }
+}

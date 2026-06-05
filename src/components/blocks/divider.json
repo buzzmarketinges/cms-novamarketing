@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_blocks_dividers",
+  "info": { "displayName": "Separador visual", "icon": "minus", "description": "Separador decorativo entre secciones" },
+  "options": {},
+  "attributes": {
+    "style": { "type": "enumeration", "enum": ["line", "dots", "space", "gradient"], "default": "line" }
+  }
+}

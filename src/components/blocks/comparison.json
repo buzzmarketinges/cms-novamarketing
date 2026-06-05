@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_blocks_comparisons",
+  "info": { "displayName": "Comparativa Antes / Después", "icon": "transfer", "description": "Dos paneles de comparación visual" },
+  "options": {},
+  "attributes": {
+    "before_label": { "type": "string", "default": "Antes" },
+    "before_content": { "type": "text" },
+    "after_label": { "type": "string", "default": "Después" },
+    "after_content": { "type": "text" }
+  }
+}

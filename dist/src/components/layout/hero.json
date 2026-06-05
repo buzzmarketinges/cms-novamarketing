@@ -1,0 +1,28 @@
+{
+    "collectionName": "components_layout_heroes",
+    "info": {
+        "displayName": "Hero",
+        "icon": "alien"
+    },
+    "options": {},
+    "attributes": {
+        "badge": {
+            "type": "string"
+        },
+        "title_primary": {
+            "type": "string"
+        },
+        "title_secondary": {
+            "type": "string"
+        },
+        "title_gradient": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "cta_text": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_blocks_callouts",
+  "info": { "displayName": "Caja destacada", "icon": "information", "description": "Caja resaltada: dato, atención, resultado, consejo" },
+  "options": {},
+  "attributes": {
+    "type": { "type": "enumeration", "enum": ["dato", "atencion", "resultado", "tip"], "default": "dato" },
+    "title": { "type": "string" },
+    "content": { "type": "text", "required": true }
+  }
+}
