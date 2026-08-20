@@ -75,6 +75,35 @@ export default {
       strapi.log.error('[UNHANDLED] stack: ' + (reason?.stack || ''));
     });
 
+    // Seed de sectores (idempotente): crea los 12 sectores verticales si la
+    // colección está vacía. Los slugs deben coincidir con las keys de
+    // src/lib/sectors.ts del frontend.
+    try {
+      const SEED_SECTORS = [
+        { name: 'Ecommerce', slug: 'ecommerce' },
+        { name: 'Inmobiliarias', slug: 'inmobiliarias' },
+        { name: 'Restaurantes', slug: 'restaurantes' },
+        { name: 'Psicólogos', slug: 'psicologos' },
+        { name: 'Terapeutas', slug: 'terapeutas' },
+        { name: 'Dentistas', slug: 'dentistas' },
+        { name: 'Gimnasios', slug: 'gimnasios' },
+        { name: 'Constructoras', slug: 'constructoras' },
+        { name: 'Abogados', slug: 'abogados' },
+        { name: 'Industrial', slug: 'industrial' },
+        { name: 'Hoteles', slug: 'hoteles' },
+        { name: 'B2B', slug: 'b2b' },
+      ];
+      const sectorCount = await strapi.documents('api::sector.sector' as any).count({});
+      if (sectorCount === 0) {
+        for (const s of SEED_SECTORS) {
+          await strapi.documents('api::sector.sector' as any).create({ data: s });
+        }
+        strapi.log.info('[bootstrap] Seeded ' + SEED_SECTORS.length + ' sectors');
+      }
+    } catch (err: any) {
+      strapi.log.warn('[bootstrap] Sector seed skipped: ' + err?.message);
+    }
+
     // Sincronizar excerpt con metadescription automáticamente
     (strapi.db as any).lifecycles.subscribe({
       models: ['api::article.article'],

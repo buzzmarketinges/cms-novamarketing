@@ -1,131 +1,128 @@
 {
-    "kind": "collectionType",
-    "collectionName": "case-studies",
-    "info": {
-        "singularName": "case-study",
-        "pluralName": "case-studies",
-        "displayName": "Caso de Éxito",
-        "description": "Casos de éxito de clientes de Nova Marketing"
-    },
-    "options": {
-        "draftAndPublish": true
-    },
-    "pluginOptions": {
-        "i18n": {
-            "localized": true
-        }
-    },
-    "attributes": {
-        "title": {
-            "type": "string",
-            "required": true,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "metatitle": {
-            "type": "string",
-            "required": false,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "company": {
-            "type": "string",
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "description": {
-            "type": "text",
-            "required": true,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "metadescription": {
-            "type": "string",
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "cover_image": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-                "images"
-            ],
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "categories": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::category.category",
-            "inversedBy": "case_studies"
-        },
-        "author": {
-            "type": "relation",
-            "relation": "manyToOne",
-            "target": "api::author.author",
-            "inversedBy": "case_studies"
-        },
-        "slug": {
-            "type": "string",
-            "required": true,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "isPublic": {
-            "type": "boolean",
-            "default": false,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "page_blocks": {
-            "type": "dynamiczone",
-            "components": [
-                "blocks.rich-text",
-                "blocks.html",
-                "blocks.image",
-                "blocks.callout",
-                "blocks.metrics-row",
-                "blocks.quote",
-                "blocks.cta",
-                "blocks.two-columns",
-                "blocks.image-text",
-                "blocks.video",
-                "blocks.divider",
-                "blocks.gallery",
-                "blocks.timeline",
-                "blocks.comparison",
-                "blocks.big-stat"
-            ],
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        }
+  "kind": "collectionType",
+  "collectionName": "case-studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Caso de Éxito",
+    "description": "Casos de éxito de clientes de Nova Marketing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
     }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "company": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "metadescription": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "case_studies"
+    },
+    "sectors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sector.sector",
+      "inversedBy": "case_studies"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "case_studies"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "page_blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.rich-text",
+        "blocks.html",
+        "blocks.image",
+        "blocks.callout",
+        "blocks.metrics-row",
+        "blocks.quote",
+        "blocks.cta",
+        "blocks.two-columns",
+        "blocks.image-text",
+        "blocks.video",
+        "blocks.divider",
+        "blocks.gallery",
+        "blocks.timeline",
+        "blocks.comparison",
+        "blocks.big-stat"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
 }
